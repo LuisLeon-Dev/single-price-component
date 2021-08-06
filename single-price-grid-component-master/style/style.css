@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: 'Karla', sans-serif;
+    --font-size: 16px;
+    --font-weight-title: 700;
+    --font-weight-content: 400;
+    --color-cyan: hsl(179, 62%, 43%);
+    --color-darkCyan: hsl(179, 62%, 41%);
+    --color-bright-yellow: hsl(71, 73%, 54%);
+    --color-light-gray: hsl(204, 43%, 93%);
+    --color-grayish-blue: hsl(218, 22%, 67%);
+}
+
+body {
+    font-family: var(--font-family);
+    min-width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.card {
+    width: 40%;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.57);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.57);
+}
+
+.intro {
+    padding: 30px;
+}
+
+.intro__title {
+    color: var(--color-cyan);
+    margin-bottom: 1rem;
+}
+
+.intro__subtitle {
+    color: var(--color-bright-yellow);
+    margin-bottom: 1rem;
+    font-size: 18px;
+    font-weight: var(--font-weight-title)
+}
+
+.intro__info {
+    color: var(--color-grayish-blue)
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.pricing {
+    background-color: var(--color-darkCyan);
+    color: var(--color-light-gray);
+    grid-column: 1/2;
+    padding: 30px;
+}
+
+.pricing__title {
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.pricing__price {
+    font-size: 35px;
+    margin-bottom: 1rem;
+}
+
+.pricing__price span {
+    font-size: 16px;
+}
+
+.pricing__button {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-title);
+    background-color: var(--color-bright-yellow);
+    color: #fff;
+    width: 100%;
+    padding: .8rem;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    border-style: none;
+    box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.28);
+    -webkit-box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.28);
+}
+
+.aboutUs {
+    background-color: var(--color-cyan);
+    color: var(--color-light-gray);
+    grid-column: 2/3;
+    padding: 30px;
+}
+
+.aboutUs__title {
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.aboutUs__info {
+    width: 80%;
+}
